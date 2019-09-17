@@ -1,0 +1,53 @@
+ASSIGNMENT 2:
+
+1) $ ssh -vvv -i NewTestKey.pem ec2-18-220-67-67.us-east-2.compute.amazonaws.com
+ 
+2) $ ssh -i "NewTestKey.pem" ec2-user@ec2-18-220-67-67.us-east-2.compute.amazonaws.com
+
+3) [ec2-user@ip-172-31-36-72 ~]$ docker -v
+
+4) [ec2-user@ip-172-31-36-72 ~]$ sudo yum update -y
+
+5) [ec2-user@ip-172-31-36-72 ~]$ sudo yum install docker -y
+
+6) sudo service docker status
+
+7) [ec2-user@ip-172-31-36-72 ~]$ sudo usermod -a -G docker ec2-user
+
+8) [ec2-user@ip-172-31-36-72 ~]$ sudo su
+
+9) [ec2-user@ip-172-31-36-72 ~]$ docker pull hello-world
+
+9)  docker images
+
+10) docker run hello-world
+
+11) docker image pull mysql/mysql-server
+
+12) docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql
+
+13) doker login 
+
+14)[root@ip-172-31-36-72 ec2-user]# docker container ps
+
+15)[root@ip-172-31-36-72 ec2-user]# docker exec -it 46121c362fd6 bash
+
+16) root@46121c362fd6:/# mysql -u root -p
+
+17) mysql> show databases;
+
+18) mysql> CREATE DATABASE employee;
+
+19) mysql> use employee;
+
+20) mysql> create table info(empid number,empname varchar2(30), empsal number, phoneno varchar2(30));
+
+21) insert into info values("101","Adrika","15599","3122342535");
+
+22) insert into info values("102","samila","20000","4156464645");
+
+23) mysql> select * from info;
+
+24) mysql> exit
+
+
